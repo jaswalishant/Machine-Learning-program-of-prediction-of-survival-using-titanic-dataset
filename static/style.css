@@ -1,0 +1,84 @@
+body{
+    margin: 0 ;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    background-image:linear-gradient(120deg, teal, rgb(124, 224, 234));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(218, 211, 211, 0.228);
+    box-shadow: rgb(100, 99, 99) 10px 10px 20px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.row form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.row input, button{
+    width: 30vw;
+    height: 20px;
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.row button{
+    width: 20vw;
+    height: fit-content;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.row label{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.row form .btn{
+    margin: auto;
+}
+
+.row .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.row .input h4{
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.row select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    width: 31vw;
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+}

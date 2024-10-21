@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form action="prediction" method="POST">
+                {% csrf_token %}
+                <label>PClass : </label>
+                <input type="text", name="pclass" required=required>
+                <label>Sex : </label>
+                <input type="text", name="sex" required=required>
+                <label>Age : </label>
+                <input type="text", name="age" required=required>
+                <label>Embarked (Only C/S/Q) : </label>
+                <select name="embarked" id="selection">
+                    <option value="S">Southampton</option>
+                    <option value="C">Cherbourg</option>
+                    <option value="Q">Queenstown</option>
+                </select>
+                <label>Number of family members : </label>
+                <input type="text", name="family" required=required>
+                <button type="submit" class="btn">Predict</button>
+                </form>
+        </div>
+    </div>
+</body>
+</html>
